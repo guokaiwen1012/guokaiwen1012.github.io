@@ -1,6 +1,6 @@
 module.exports = {
-  dest: '../../jasonandjay.github.com/study',
-  base: '/study/',
+  dest: 'doc',
+  base: '/',
   markdown: {
     toc: { includeLevel: [2, 3] }
   },
@@ -58,6 +58,7 @@ module.exports = {
           {
             text: '知识点笔记',
             items: [
+              { text: 'h5移动开发', link: '/zh/h5/'},
               { text: 'Vue', link: '/zh/vue/' },
               { text: 'React', link: '/zh/react/'},
               { text: '小程序', link: '/zh/miniapp/' },
@@ -66,7 +67,7 @@ module.exports = {
           },
           // {
           //   text: 'GitHub',
-          //   link: 'https://github.com/jasonandjay'
+          //   link: 'https://github.com/guokaiwen1012'
           // },
           // {
           //   text: '语言',
@@ -93,6 +94,7 @@ module.exports = {
         sidebar: {
           '/guide/': genSidebarConfig('指南'),
           '/zh/ali/': [{title:'阿里面试题'}],
+          '/zh/h5/':[{title:'css',children:['css3动画']}],
           '/zh/vue/': [{title: 'Vue知识点', children: [
             '', 'Es6', 'Es6方法扩展', 'Webpack', 'Babel', 'Promise', 'Vue 各种方法之间的区别', 'Vue组件', 'Vue路由', 'Vue动画', 'vue钩子函数', 'vuex'
           ]}],
